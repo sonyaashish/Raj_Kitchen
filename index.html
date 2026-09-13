@@ -3,3 +3,8 @@
 <button>Q</button>
 <button>R</button>
 <button>D</button>
+curl -X POST 'https://securestage.paytmpayments.com/order/sendpaymentrequest' \
+--header 'Content-Type: application/json' \
+--data '{"body":{"mid":"{mid}","merchantOrderId":"BEKJBJK123","amount":"1303.00","userPhoneNo":"7777777777","posId":"S1234_P1235"}},
+         "head":{"clientId":"C11","version":"v1","signature":"{signature}"}}' 
+
